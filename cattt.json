@@ -1,0 +1,284 @@
+{
+  "dependencies": {},
+  "hasDevDependencies": false,
+  "name": "snyk",
+  "size": 1,
+  "version": "1.852.0",
+  "meta": {
+    "nodeVersion": ">=10",
+    "lockfileVersion": 2,
+    "packageManager": "npm"
+  }
+}
+{
+  "vulnerabilities": [
+    {
+      "id": "SNYK-JS-SNYK-3037342",
+      "title": "Command Injection",
+      "CVSSv3": "CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:U/C:H/I:L/A:L/E:P",
+      "credit": [
+        "Ron Masas",
+        "Imperva"
+      ],
+      "semver": {
+        "vulnerable": [
+          "<1.996.0"
+        ]
+      },
+      "exploit": "Proof of Concept",
+      "fixedIn": [
+        "1.996.0"
+      ],
+      "patches": [],
+      "insights": {
+        "triageAdvice": null
+      },
+      "language": "js",
+      "severity": "medium",
+      "cvssScore": 6.4,
+      "functions": [],
+      "malicious": false,
+      "moduleName": "snyk",
+      "references": [
+        {
+          "url": "https://github.com/snyk/snyk-go-plugin/commit/d8dfc11ebb185e89f62b464ebf7cdd20ecce629d",
+          "title": "GitHub Commit"
+        },
+        {
+          "url": "https://www.imperva.com/blog/how-scanning-your-projects-for-security-issues-can-lead-to-remote-code-execution/",
+          "title": "Imperva Blog Post"
+        }
+      ],
+      "cvssDetails": [
+        {
+          "assigner": "NVD",
+          "severity": "high",
+          "cvssV3Vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+          "cvssV3BaseScore": 7.8,
+          "modificationTime": "2022-10-06T01:10:25.975376Z"
+        }
+      ],
+      "description": "## Overview\n\nAffected versions of this package are vulnerable to Command Injection via the `snyk-go-plugin` which is used by the Snyk CLI tool.\r\n\r\nA successful exploit, allows attackers to run arbitrary commands on the host system where the Snyk CLI is installed.\r\nIn order to exploit this vulnerability, a target would have to execute the “snyk test” command on untrusted files. As developers are unlikely to run \"snyk test\" on untrusted files, an attacker might have to trick them into opening a malicious file before running \"snyk test\".\n## Remediation\nUpgrade `snyk` to version 1.996.0 or higher.\n## References\n- [GitHub Commit](https://github.com/snyk/snyk-go-plugin/commit/d8dfc11ebb185e89f62b464ebf7cdd20ecce629d)\n- [Imperva Blog Post](https://www.imperva.com/blog/how-scanning-your-projects-for-security-issues-can-lead-to-remote-code-execution/)\n",
+      "identifiers": {
+        "CVE": [
+          "CVE-2022-40764"
+        ],
+        "CWE": [
+          "CWE-77"
+        ]
+      },
+      "packageName": "snyk",
+      "proprietary": false,
+      "creationTime": "2022-09-30T10:33:59.465013Z",
+      "functions_new": [],
+      "alternativeIds": [],
+      "disclosureTime": "2022-09-30T07:18:14Z",
+      "packageManager": "npm",
+      "publicationTime": "2022-09-30T10:34:38Z",
+      "modificationTime": "2022-10-06T15:25:00.973884Z",
+      "socialTrendAlert": true,
+      "severityWithCritical": "medium",
+      "from": [
+        "snyk@1.852.0"
+      ],
+      "upgradePath": [],
+      "isUpgradable": false,
+      "isPatchable": false,
+      "name": "snyk",
+      "version": "1.852.0"
+    }
+  ],
+  "ok": false,
+  "dependencyCount": 0,
+  "org": "kevin-s31-org",
+  "policy": "# Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.\nversion: v1.25.0\n# ignores vulnerabilities until expiry date; change duration by modifying expiry date\nignore:\n  SNYK-JS-TAR-1579152:\n    - '*':\n        reason: Module not affected by this\n        expires: 2022-02-16T00:00:00.000Z\n        created: 2022-02-15T15:44:09.361Z\n        source: cli\npatch: {}\n",
+  "isPrivate": true,
+  "licensesPolicy": {
+    "severities": {},
+    "orgLicenseRules": {
+      "AGPL-1.0": {
+        "licenseType": "AGPL-1.0",
+        "severity": "high",
+        "instructions": ""
+      },
+      "AGPL-3.0": {
+        "licenseType": "AGPL-3.0",
+        "severity": "high",
+        "instructions": ""
+      },
+      "Artistic-1.0": {
+        "licenseType": "Artistic-1.0",
+        "severity": "medium",
+        "instructions": ""
+      },
+      "Artistic-2.0": {
+        "licenseType": "Artistic-2.0",
+        "severity": "medium",
+        "instructions": ""
+      },
+      "CDDL-1.0": {
+        "licenseType": "CDDL-1.0",
+        "severity": "medium",
+        "instructions": ""
+      },
+      "CPOL-1.02": {
+        "licenseType": "CPOL-1.02",
+        "severity": "high",
+        "instructions": ""
+      },
+      "EPL-1.0": {
+        "licenseType": "EPL-1.0",
+        "severity": "medium",
+        "instructions": ""
+      },
+      "GPL-2.0": {
+        "licenseType": "GPL-2.0",
+        "severity": "high",
+        "instructions": ""
+      },
+      "GPL-3.0": {
+        "licenseType": "GPL-3.0",
+        "severity": "high",
+        "instructions": ""
+      },
+      "LGPL-2.0": {
+        "licenseType": "LGPL-2.0",
+        "severity": "medium",
+        "instructions": ""
+      },
+      "LGPL-2.1": {
+        "licenseType": "LGPL-2.1",
+        "severity": "medium",
+        "instructions": ""
+      },
+      "LGPL-3.0": {
+        "licenseType": "LGPL-3.0",
+        "severity": "medium",
+        "instructions": ""
+      },
+      "MPL-1.1": {
+        "licenseType": "MPL-1.1",
+        "severity": "medium",
+        "instructions": ""
+      },
+      "MPL-2.0": {
+        "licenseType": "MPL-2.0",
+        "severity": "medium",
+        "instructions": ""
+      },
+      "MS-RL": {
+        "licenseType": "MS-RL",
+        "severity": "medium",
+        "instructions": ""
+      },
+      "SimPL-2.0": {
+        "licenseType": "SimPL-2.0",
+        "severity": "high",
+        "instructions": ""
+      }
+    }
+  },
+  "packageManager": "npm",
+  "projectId": "2020b1b2-b787-4a19-9742-77be97d8afa3",
+  "ignoreSettings": {
+    "adminOnly": false,
+    "reasonRequired": false,
+    "disregardFilesystemIgnores": false
+  },
+  "summary": "1 vulnerable dependency path",
+  "remediation": {
+    "unresolved": [
+      {
+        "id": "SNYK-JS-SNYK-3037342",
+        "title": "Command Injection",
+        "CVSSv3": "CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:U/C:H/I:L/A:L/E:P",
+        "credit": [
+          "Ron Masas",
+          "Imperva"
+        ],
+        "semver": {
+          "vulnerable": [
+            "<1.996.0"
+          ]
+        },
+        "exploit": "Proof of Concept",
+        "fixedIn": [
+          "1.996.0"
+        ],
+        "patches": [],
+        "insights": {
+          "triageAdvice": null
+        },
+        "language": "js",
+        "severity": "medium",
+        "cvssScore": 6.4,
+        "functions": [],
+        "malicious": false,
+        "moduleName": "snyk",
+        "references": [
+          {
+            "url": "https://github.com/snyk/snyk-go-plugin/commit/d8dfc11ebb185e89f62b464ebf7cdd20ecce629d",
+            "title": "GitHub Commit"
+          },
+          {
+            "url": "https://www.imperva.com/blog/how-scanning-your-projects-for-security-issues-can-lead-to-remote-code-execution/",
+            "title": "Imperva Blog Post"
+          }
+        ],
+        "cvssDetails": [
+          {
+            "assigner": "NVD",
+            "severity": "high",
+            "cvssV3Vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+            "cvssV3BaseScore": 7.8,
+            "modificationTime": "2022-10-06T01:10:25.975376Z"
+          }
+        ],
+        "description": "## Overview\n\nAffected versions of this package are vulnerable to Command Injection via the `snyk-go-plugin` which is used by the Snyk CLI tool.\r\n\r\nA successful exploit, allows attackers to run arbitrary commands on the host system where the Snyk CLI is installed.\r\nIn order to exploit this vulnerability, a target would have to execute the “snyk test” command on untrusted files. As developers are unlikely to run \"snyk test\" on untrusted files, an attacker might have to trick them into opening a malicious file before running \"snyk test\".\n## Remediation\nUpgrade `snyk` to version 1.996.0 or higher.\n## References\n- [GitHub Commit](https://github.com/snyk/snyk-go-plugin/commit/d8dfc11ebb185e89f62b464ebf7cdd20ecce629d)\n- [Imperva Blog Post](https://www.imperva.com/blog/how-scanning-your-projects-for-security-issues-can-lead-to-remote-code-execution/)\n",
+        "identifiers": {
+          "CVE": [
+            "CVE-2022-40764"
+          ],
+          "CWE": [
+            "CWE-77"
+          ]
+        },
+        "packageName": "snyk",
+        "proprietary": false,
+        "creationTime": "2022-09-30T10:33:59.465013Z",
+        "functions_new": [],
+        "alternativeIds": [],
+        "disclosureTime": "2022-09-30T07:18:14Z",
+        "packageManager": "npm",
+        "publicationTime": "2022-09-30T10:34:38Z",
+        "modificationTime": "2022-10-06T15:25:00.973884Z",
+        "socialTrendAlert": true,
+        "from": [
+          "snyk@1.852.0"
+        ],
+        "upgradePath": [],
+        "isUpgradable": false,
+        "isPatchable": false,
+        "isPinnable": false,
+        "isRuntime": false,
+        "name": "snyk",
+        "version": "1.852.0",
+        "severityWithCritical": "medium"
+      }
+    ],
+    "upgrade": {},
+    "patch": {},
+    "ignore": {},
+    "pin": {}
+  },
+  "filesystemPolicy": true,
+  "filtered": {
+    "ignore": [],
+    "patch": []
+  },
+  "uniqueCount": 1,
+  "projectName": "snyk",
+  "displayTargetFile": "package-lock.json",
+  "hasUnknownVersions": false,
+  "path": "/Users/ksuzy31/Kev-Stuff/Goof/goof"
+}
